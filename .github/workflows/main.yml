@@ -22,26 +22,3 @@ jobs:
           # Cypress Record Key для запису результатів у Cypress Cloud
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
-
-
-
-
-          # name: Cypress Tests
-
-# on: push
-
-# jobs:
-#   cypress-run:
-#     runs-on: ubuntu-24.04
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v4
-#       # Install npm dependencies, cache them correctly
-#       # and run all Cypress tests
-#       - name: Cypress run
-#         uses: cypress-io/github-action@v6
-#         with:
-#           build: npm run build
-#         #   start: npm start
