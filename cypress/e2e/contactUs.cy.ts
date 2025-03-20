@@ -28,7 +28,6 @@ describe('Contact us page', () => {
   });
 
   beforeEach(() => {
-    // cy.viewport(1920, 966);
     cy.visit('/contact-us');
   });
 
