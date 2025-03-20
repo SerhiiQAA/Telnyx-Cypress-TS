@@ -30,7 +30,7 @@ Before installing, ensure your system meets the following requirements:
 
 
 ## Steps to Launch
-## Run Cypress tests:
+## Run Cypress tests (examples):
 
 1.  Headless mode on desktop:
     ```bash
