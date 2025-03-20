@@ -28,11 +28,6 @@ Before installing, ensure your system meets the following requirements:
    npm install cypress --save-dev
 
 
-2. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repository-name.git
-
-
 ## Steps to Launch
 ## Run Cypress tests (examples):
 
