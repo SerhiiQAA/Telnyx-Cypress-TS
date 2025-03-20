@@ -21,10 +21,14 @@ Before installing, ensure your system meets the following requirements:
 
 1. Install dependencies:
    ```bash
-   npm ci
+   npm install
+
+1. Install Cypress:
+   ```bash
+   npm install cypress --save-dev
 
 
-1. Clone the repository:
+2. Clone the repository:
    ```bash
    git clone https://github.com/your-repository-name.git
 
