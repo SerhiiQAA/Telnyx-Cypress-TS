@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "description": "My traineer project",
   "main": "index.js",
-"scripts": {
-  "test:desktop:headless": "cypress run --config-file cypress/configs/cypress.config.desktop.ts",
-  "test:desktop:headed": "cypress open --config-file cypress/configs/cypress.config.desktop.ts",
-  "test:mobile:headless": "cypress run --config-file cypress/configs/cypress.config.mobile.ts",
-  "test:mobile:headed": "cypress open --config-file cypress/configs/cypress.config.mobile.ts",
-  "test:tablet:headless": "cypress run --config-file cypress/configs/cypress.config.tablet.ts",
-  "test:tablet:headed": "cypress open --config-file cypress/configs/cypress.config.tablet.ts",
-  "test:desktop:chrome:headless": "cypress run --browser chrome --config-file cypress/configs/cypress.config.desktop.ts",
-  "test:desktop:firefox:headless": "cypress run --browser firefox --config-file cypress/configs/cypress.config.desktop.ts",
-  "test:desktop:electron:headless": "cypress run --browser electron --config-file cypress/configs/cypress.config.desktop.ts"
-},
+  "scripts": {
+    "build": "echo 'No build step required'", 
+    "test:desktop:headless": "cypress run --config-file cypress/configs/cypress.config.desktop.ts",
+    "test:desktop:headed": "cypress open --config-file cypress/configs/cypress.config.desktop.ts",
+    "test:mobile:headless": "cypress run --config-file cypress/configs/cypress.config.mobile.ts",
+    "test:mobile:headed": "cypress open --config-file cypress/configs/cypress.config.mobile.ts",
+    "test:tablet:headless": "cypress run --config-file cypress/configs/cypress.config.tablet.ts",
+    "test:tablet:headed": "cypress open --config-file cypress/configs/cypress.config.tablet.ts",
+    "test:desktop:chrome:headless": "cypress run --browser chrome --config-file cypress/configs/cypress.config.desktop.ts",
+    "test:desktop:firefox:headless": "cypress run --browser firefox --config-file cypress/configs/cypress.config.desktop.ts",
+    "test:desktop:electron:headless": "cypress run --browser electron --config-file cypress/configs/cypress.config.desktop.ts"
+  },
   "author": "Serhii",
   "license": "ISC",
   "devDependencies": {
