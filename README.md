@@ -32,21 +32,22 @@ Before installing, ensure your system meets the following requirements:
 ## Steps to Launch
 ## Run Cypress tests:
 
-1.    Headless mode on desktop:
+1.  Headless mode on desktop:
     ```bash
     npm run test:desktop:headless
 
-1.    Headless mode on mobile:
+
+1.  Headless mode on mobile:
     ```bash
     npm run test:mobile:headless
 
 
-1.    Headless mode on tablet:
+1.  Headless mode on tablet:
     ```bash
     npm run test:tablet:headless
 
 
-1.    Interactive mode on desktop (headed):
+1.  Interactive mode on desktop (headed):
     ```bash
     npm run test:desktop:headed
 
