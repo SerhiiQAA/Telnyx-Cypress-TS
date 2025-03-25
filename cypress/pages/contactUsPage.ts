@@ -63,46 +63,6 @@ class ContactUsPage {
         this.elements.submitButton().click();
     }
 
-    verifySuccessMsg(expectedText: string) {
-        this.elements.successMsg().should('have.text', expectedText);
-    }
-    
-    verifyHelpErrorMsg(expectedText: string) {
-        this.elements.howHelpErrorMsg().should('have.text', expectedText);
-    }
-
-    verifyFirstNameErrorMsg(expectedText: string) {
-        this.elements.firstNameErrorMsg().should('have.text', expectedText);
-    }
-
-    verifyLastNameErrorMsg(expectedText: string) {
-        this.elements.lastNameErrorMsg().should('have.text', expectedText);
-    }
-
-    verifyEmailErrorMsg(expectedText: string) {
-        this.elements.emailErrorMsg().should('have.text', expectedText);
-    }
-
-    verifyWebsiteErrorMsg(expectedText: string) {
-        this.elements.websiteErrorMsg().should('have.text', expectedText);
-    }
-
-    verifyDescribeRequestErrorMsg(expectedText: string) {
-        this.elements.describeRequestErrorMsg().should('have.text', expectedText);
-    }
-
-    verifyHowHearAboutErrorMsg(expectedText: string) {
-        this.elements.howHearAboutErrorMsg().should('have.text', expectedText);
-    }
-
-    verifyPhoneNumberErrorMsg(expectedText: string) {
-        this.elements.phoneNumberErrorMsg().should('have.text', expectedText);
-    }
-
-    verifyCountryErrorMsg(expectedText: string) {
-        this.elements.countryErrorMsg().should('have.text', expectedText);
-    }
-
     toggleMarketingEmailsCheckbox(select = true) {
         const checkbox = this.elements.marketingEmailsCheckbox();
         if (select) {
