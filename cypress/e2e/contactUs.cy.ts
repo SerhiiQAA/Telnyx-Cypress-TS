@@ -11,7 +11,7 @@ describe('Contact us page', () => {
   const website = faker.internet.url();
   const howDidYouHear = 'Online search';
   const additionalInfo = faker.lorem.sentence();
-
+  
   beforeEach(() => {
     cy.visit('/contact-us');
   });
@@ -28,13 +28,11 @@ describe('Contact us page', () => {
     contactUsPage.typeAdditionalInfo(additionalInfo);
     contactUsPage.toggleMarketingEmailsCheckbox(true);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.successMsg().should('have.text', 'Thank you.');
   });
 
   it('Talk to an expert with empty fields / TC 2', () => {
     contactUsPage.clickSubmitBtn();
-    
     contactUsPage.elements.howHelpErrorMsg().should('have.text', 'This field is required.');
   });
 
@@ -49,7 +47,6 @@ describe('Contact us page', () => {
     contactUsPage.typeAdditionalInfo(additionalInfo);
     contactUsPage.toggleMarketingEmailsCheckbox(true);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.firstNameErrorMsg().should('have.text', 'This field is required.');
   });
 
@@ -64,7 +61,6 @@ describe('Contact us page', () => {
     contactUsPage.typeAdditionalInfo(additionalInfo);
     contactUsPage.toggleMarketingEmailsCheckbox(true);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.lastNameErrorMsg().should('have.text', 'This field is required.');
   });
 
@@ -79,7 +75,6 @@ describe('Contact us page', () => {
     contactUsPage.typeAdditionalInfo(additionalInfo);
     contactUsPage.toggleMarketingEmailsCheckbox(true);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.emailErrorMsg().should('have.text', 'Must be valid email. example@yourdomain.com');
   });
 
@@ -94,7 +89,6 @@ describe('Contact us page', () => {
     contactUsPage.typeAdditionalInfo(additionalInfo);
     contactUsPage.toggleMarketingEmailsCheckbox(true);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.phoneNumberErrorMsg().should('have.text', 'Phone numbers must be minimum 6 digits.');
   });
 
@@ -109,7 +103,6 @@ describe('Contact us page', () => {
     contactUsPage.typeAdditionalInfo(additionalInfo);
     contactUsPage.toggleMarketingEmailsCheckbox(true);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.websiteErrorMsg().should('have.text', 'This field is required.');
   });
 
@@ -124,7 +117,6 @@ describe('Contact us page', () => {
     contactUsPage.typeHowDidYouHear(howDidYouHear);
     contactUsPage.toggleMarketingEmailsCheckbox(true);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.describeRequestErrorMsg().should('have.text', 'This field is required.');
   });
 
@@ -139,7 +131,6 @@ describe('Contact us page', () => {
     contactUsPage.typeAdditionalInfo(additionalInfo);
     contactUsPage.toggleMarketingEmailsCheckbox(true);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.howHearAboutErrorMsg().should('have.text', 'This field is required.');
   });
 
@@ -155,7 +146,6 @@ describe('Contact us page', () => {
     contactUsPage.typeAdditionalInfo(additionalInfo);
     contactUsPage.toggleMarketingEmailsCheckbox(false);
     contactUsPage.clickSubmitBtn();
-
     contactUsPage.elements.successMsg().should('have.text', 'Thank you.');
   });
 });

@@ -10,7 +10,7 @@ class ContactUsPage {
         howDidYouHear: () => cy.get('#How_did_you_hear_about_Telnyx_Open__c'),
         additionalInfo: () => cy.get('#Form_Additional_Information__c'),
         submitButton: () => cy.get('.mktoButton'),
-        successMsg: () => cy.get('h1'),
+        successMsg: () => cy.get('h1 .c-PJLV'),
         howHelpErrorMsg: () => cy.get('#ValidMsgReason_for_Contact__c'),
         firstNameErrorMsg: () => cy.get('#ValidMsgFirstName'),
         lastNameErrorMsg: () => cy.get('#ValidMsgLastName'),
@@ -20,7 +20,7 @@ class ContactUsPage {
         howHearAboutErrorMsg: () => cy.get('#ValidMsgHow_did_you_hear_about_Telnyx_Open__c'),
         phoneNumberErrorMsg: () => cy.get('#ValidMsgPhone_Number_Base__c'),
         countryErrorMsg: () => cy.get('#ValidMsgPhone_Number_Extension__c'),
-        marketingEmailsCheckbox: () => cy.get('#mktoCheckbox_15748_0'), 
+        marketingEmailsCheckbox: () => cy.get('[name="Subscription_Opt_In__c"]'), 
     };
 
     selectReasonForContact(option: string) {
